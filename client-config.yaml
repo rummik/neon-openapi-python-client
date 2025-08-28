@@ -1,0 +1,14 @@
+# generate_all_tags: true
+# docstrings_on_attributes: true
+# literal_enums: true
+
+content_type_overrides:
+  '*/*': application/json
+
+class_overrides:
+  _PrivateInternalLongName:
+    class_name: ShortName
+    module_name: short_name
+
+project_name_override: neon-crm
+# package_name_override: neon_crm_openapi_python_client

@@ -1,0 +1,2 @@
+aenum==3.1.16
+openapi-python-client==0.25.3
