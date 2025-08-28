@@ -11,6 +11,12 @@ if __name__ == '__main__':
     if sys.argv[0].endswith('.exe'):
         sys.argv[0] = sys.argv[0][:-4]
 
+    # Generating a patched version of the Neon CRM schema:
+    #   sed -r \
+    #       -e "s/^( +)([0-9]+):/\1'\2':/;" \
+    #       -e "s/^( +)['\"]\*\/\*['\"]:\$/\1'application\/json':/;" \
+    #       ~/Downloads/v2.10.yaml > /tmp/v2.10-patched.yaml
+
     # argv0 = sys.argv[0]
     #
     # sys.argv = [
