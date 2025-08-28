@@ -2,7 +2,7 @@
 import aenum
 import http
 
-aenum.extend_enum(http.HTTPStatus, 'O_K', 222, 'Neon extra OK response')
+aenum.extend_enum(http.HTTPStatus, 'O_K', 222, 'Neon spec-breaking OK response')
 
 
 import sys
